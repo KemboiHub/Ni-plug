@@ -84,7 +84,26 @@ function Field({
   ...props
 }: React.ComponentProps<'div'> & VariantProps<typeof fieldVariants>) {
   return (
-    
+    <div
+      role="group"
+      data-slot="field"
+      data-orientation={orientation}
+      className={cn(fieldVariants({ orientation }), className)}
+      {...props}
+    />
+  )
+}
+
+function FieldContent({ className, ...props }: React.ComponentProps<'div'>) {
+  return (
+    <div
+      data-slot="field-content"
+      className={cn(
+        'group/field-content flex flex-1 flex-col gap-1.5 leading-snug',
+        className,
+      )}
+      {...props}
+    />
   )
 }
 
