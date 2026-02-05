@@ -64,12 +64,7 @@ export function Header() {
             <Link href="/admin" className="block text-foreground hover:text-primary py-2">
               Admin Dashboard
             </Link>
-             <Link href="/admin" className="block text-foreground hover:text-primary py-2">
-              Admin Dashboard
-            </Link>
-             <Link href="/admin" className="block text-foreground hover:text-primary py-2">
-              Admin Dashboard
-            </Link>
+    
           </div>
         )}
       </nav>
